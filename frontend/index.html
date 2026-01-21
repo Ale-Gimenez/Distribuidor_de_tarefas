@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Distribuição de Funções</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1>🎯 Sistema de Distribuição de Funções</h1>
+                <p>Cadastre exatamente 16 pessoas para distribuir as funções automaticamente</p>
+            </div>
+        </header>
+
+        <div id="mensagem" class="mensagem hidden"></div>
+
+        <div class="content-grid">
+            <section class="card">
+                <h2>👥 Cadastro de Pessoas</h2>
+                <form id="formNomes">
+                    <div id="inputsNomes" class="inputs-grid"></div>
+                    <div class="button-group">
+                        <button type="submit" class="btn btn-primary">
+                            <span>🔀</span> Gerar Distribuição
+                        </button>
+                        <button type="button" onclick="limparTudo()" class="btn btn-secondary">
+                            Limpar
+                        </button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="card">
+                <h2>✅ Distribuição de Funções</h2>
+                <div id="resultado" class="resultado-placeholder">
+                    <div class="placeholder-content">
+                        <p>Aguardando geração...</p>
+                        <small>Preencha os 16 nomes e clique em "Gerar Distribuição"</small>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer class="info-card">
+            <h3>📋 Regras do Sistema:</h3>
+            <ul>
+                <li>✓ Exatamente <strong>16 pessoas</strong> devem ser cadastradas</li>
+                <li>✓ Cada pessoa recebe <strong>1 função principal</strong> da lista fixa</li>
+                <li>✓ Exatamente <strong>2 pessoas</strong> receberão a função adicional de <strong>Fiscal</strong></li>
+                <li>✓ A distribuição é feita de forma <strong>aleatória</strong></li>
+                <li>✓ Você pode <strong>regerar</strong> quantas vezes quiser mantendo os mesmos nomes</li>
+            </ul>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
