@@ -1,0 +1,9 @@
+# Sistema de Distribuição de Funções
+# Python 3.9+
+# 
+# Este projeto utiliza apenas bibliotecas padrão do Python:
+# - http.server
+# - json  
+# - random
+#
+# Nenhuma dependência externa é necessária
